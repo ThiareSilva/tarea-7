@@ -48,18 +48,34 @@ menu ul {
   display: flex;
 }
 
+.orden-newchat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: solid 1pt #e8ebe4;
+  height: 20vh;
+}
+
 .orden {
   display: flex;
   align-items: center;
   width: 100%;
   border: solid 1pt #e8ebe4;
+  height: 10vh;
 
+  .foto-uno {
+    height: 6vh;
+    border-radius: 50%;
+  }
   .orden-foto {
-    padding: 10px 20px 10px 10px;
     width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .fotos {
-      height: 10vh;
-      border-radius: 59%;
+      height: 7vh;
+      border-radius: 50%;
     }
   }
 
@@ -72,14 +88,23 @@ menu ul {
     }
     .descripcion {
       font-family: "Roboto", sans-serif;
-      font-weight: 300;
+      font-weight: 200;
+      font-size: 70%;
     }
   }
+  .icon-separate {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  .icon-separate i {
+    font-size: 24px;
+    margin: 0 10px;
+  }
   .orden-icono {
     width: 30%;
   }
-  
+
   .orden-texto {
     line-height: 1pt;
     width: 70%;
@@ -92,6 +117,26 @@ menu ul {
       font-weight: 300;
     }
   }
+}
+.new-chat {
+  width: 200px;
+  height: 50px;
+  background-color: #a491d2;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+}
+.new-chat:hover {
+  background-color: #cdc3e6;
+}
+
+.new-chat:focus {
+  background-color: #bec1bb;
 }
 
 .prueba-derecha {
